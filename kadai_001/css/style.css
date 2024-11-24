@@ -1,0 +1,120 @@
+/* PC、スマホ共通スタイル */
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    }
+
+img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 0 0 0 20px;
+    padding: 0px 20px;
+    font-size: clamp(28px,3.1vw,34px);
+    border: 1px solid black;
+}
+
+h2{
+    margin: 0;
+    padding: 60px 0 40px;
+    text-align: center;
+    font-size: clamp(28px,3.1vw,34px);
+}
+
+p,li{
+    font-size: 18px;
+}
+
+@media (max-width:767px){
+    h2{
+        padding: 30px 0 20px;
+    }
+}
+
+/*ヘッダー*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+header a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ナビゲーションメニュー */
+nav{
+    display: flex;
+    gap: 32px;
+}
+
+nav a{
+    font-size: clamp(21px, 2.8vw, 34px);
+}
+
+@media(max-width:767px){
+    nav{
+        gap: 24px;
+        margin: 0 10px;
+    }
+}
+
+/* Aboutセクション */
+#about > div{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+#about > div >img{
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+}
+
+#about > div > div{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about > div.name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Worksセクション */
+#works > div{
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+@media(max-width:767px){
+    #works>div{
+        grid-template-columns: 95%;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+/* フッター */
+footer{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
